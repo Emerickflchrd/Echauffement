@@ -41,8 +41,19 @@ class Program
             arme1 + " " + prix1 + "\n" +
             arme2 + " " + prix2 + "\n" +
             arme3 + " " + prix3 + "\n" +
-            arme4 + " " + prix4 + "\n" );
+            arme4 + " " + prix4 + "\n");
         // Etape 6 : laissez l'utilisateur choisir l'une de ces 4 armes en indiquant un nombre entre 1 et 4
+        Console.WriteLine("Choisis en utilisant un chiffre entre 1 et 4");
+        Console.ReadLine();
+        int choix = Convert.ToInt32(Console.ReadLine());
+        if (choix >= 1)
+        {
+            Console.WriteLine("Tu as choisis le couteau.");
+        }
+        if (choix >= 2) ;
+        {
+            Console.WriteLine("Tu as choisis l'épée.");
+        }
 
         // Etape 7a : vérifiez si l'utilisateur a assez d'argent par rapport à la somme qu'il avait rentré à l'étape 4
 
@@ -55,4 +66,4 @@ class Program
          */
     }      
 }
- 
+  
