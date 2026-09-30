@@ -80,6 +80,8 @@ class Program
             else if (argent >= 50)
             {
                 Console.WriteLine("Tu as acheté le couteau.");
+                Console.WriteLine("Solde restant :");
+                Console.WriteLine(argent - 50);
             }
         if (choix == 2)
         if (argent < 100)
