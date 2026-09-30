@@ -29,7 +29,19 @@ class Program
         Console.WriteLine("Combien d'argent as-tu?");
         int argent = Convert.ToInt32(Console.ReadLine());
         // Etape 5 : affichez maintenant 4 choix d'armes avec chacune un prix
-
+        string arme1 = ("Couteau");
+        string arme2 = ("Épée");
+        string arme3 = ("Fusil");
+        string arme4 = ("Missile");
+        int prix1 = (50);
+        int prix2 = (100);
+        int prix3 = (150);
+        int prix4 = (10000000);
+        Console.WriteLine("Voici 4 armes choisis laquelle tu veux acheter.\n" +
+            arme1 + " " + prix1 + "\n" +
+            arme2 + " " + prix2 + "\n" +
+            arme3 + " " + prix3 + "\n" +
+            arme4 + " " + prix4 + "\n" );
         // Etape 6 : laissez l'utilisateur choisir l'une de ces 4 armes en indiquant un nombre entre 1 et 4
 
         // Etape 7a : vérifiez si l'utilisateur a assez d'argent par rapport à la somme qu'il avait rentré à l'étape 4
