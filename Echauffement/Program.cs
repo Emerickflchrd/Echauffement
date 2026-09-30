@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.Design;
+using System.Diagnostics;
 
 namespace Echauffement;
 
@@ -67,6 +68,52 @@ class Program
             }
 
         // Etape 7a : vérifiez si l'utilisateur a assez d'argent par rapport à la somme qu'il avait rentré à l'étape 4
+        if (age < 18)
+        {
+            Console.WriteLine("Tu es trop jeune pour acheter un arme.");
+        }
+        else if (choix == 1)
+            if (argent < 50)
+            {
+                Console.WriteLine("Tu n'as pas assez d'argent.");
+            }
+            else if (argent >= 50)
+            {
+                Console.WriteLine("Tu as acheté le couteau.");
+            }
+        if (choix == 2)
+        if (argent < 100)
+            {
+                Console.WriteLine("Tu n'as pas assez d'argent.");
+            }
+        else if (argent >= 100)
+            {
+                Console.WriteLine("Tu as acheté l'épée.");
+                Console.WriteLine("Solde restant :");
+                Console.WriteLine(argent - 100);
+            }
+        if (choix == 3)
+        if (argent < 150)
+            {
+                Console.WriteLine("Tu n'as pas assez d'argent.");
+            }
+        else if (argent >= 150)
+            {
+                Console.WriteLine("Tu as acheté le fusil.");
+                Console.WriteLine("Solde restant :");
+                Console.WriteLine(argent - 150);
+            }
+        if (choix == 4)
+        if (argent < 10000000)
+            {
+                Console.WriteLine("Tu n'as pas assez d'argent.");
+            }
+        else if (argent >= 10000000)
+            {
+                Console.WriteLine("Tu as acheté le missile.");
+                Console.WriteLine("Solde restant :");
+                Console.WriteLine(argent - 10000000);
+            }
 
         // Etape 7b : modifiez l'étape 7a pour ajouter un connecteur logique qui vérifie que l'utilisateur est majeur en plus d'avoir assez d'argent
         // Lorsque l'utilisateur respecte ces demandes, retirez le prix de l'arme de l'argent de l'utilisateur, puis confirmez à l'utilisateur que l'action a été effectuée 
