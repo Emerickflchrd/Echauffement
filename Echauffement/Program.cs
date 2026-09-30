@@ -46,15 +46,10 @@ class Program
         Console.WriteLine("Choisis en utilisant un chiffre entre 1 et 4");
         Console.ReadLine();
         int choix = Convert.ToInt32(Console.ReadLine());
-        if (choix >= 1)
+        if (bool (choix = 1) = true);
         {
             Console.WriteLine("Tu as choisis le couteau.");
         }
-        if (choix >= 2) ;
-        {
-            Console.WriteLine("Tu as choisis l'épée.");
-        }
-
         // Etape 7a : vérifiez si l'utilisateur a assez d'argent par rapport à la somme qu'il avait rentré à l'étape 4
 
         // Etape 7b : modifiez l'étape 7a pour ajouter un connecteur logique qui vérifie que l'utilisateur est majeur en plus d'avoir assez d'argent
