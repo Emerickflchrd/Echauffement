@@ -73,50 +73,49 @@ class Program
             Console.WriteLine("Tu es trop jeune pour acheter un arme.");
         }
         else if (choix == 1)
-            if (argent < 50)
+            if (argent < prix1)
             {
                 Console.WriteLine("Tu n'as pas assez d'argent.");
             }
-            else if (argent >= 50)
+            else if (argent >= prix1)
             {
                 Console.WriteLine("Tu as acheté le couteau.");
                 Console.WriteLine("Solde restant :");
-                Console.WriteLine(argent - 50);
+                Console.WriteLine(argent - prix1);
             }
         if (choix == 2)
-        if (argent < 100)
+        if (argent < prix2)
             {
                 Console.WriteLine("Tu n'as pas assez d'argent.");
             }
-        else if (argent >= 100)
+        else if (argent >= prix2)
             {
                 Console.WriteLine("Tu as acheté l'épée.");
                 Console.WriteLine("Solde restant :");
-                Console.WriteLine(argent - 100);
+                Console.WriteLine(argent - prix2);
             }
         if (choix == 3)
-        if (argent < 150)
+        if (argent < prix3)
             {
                 Console.WriteLine("Tu n'as pas assez d'argent.");
             }
-        else if (argent >= 150)
+        else if (argent >= prix3)
             {
                 Console.WriteLine("Tu as acheté le fusil.");
                 Console.WriteLine("Solde restant :");
-                Console.WriteLine(argent - 150);
+                Console.WriteLine(argent - prix3);
             }
         if (choix == 4)
-        if (argent < 10000000)
+        if (argent < prix4)
             {
                 Console.WriteLine("Tu n'as pas assez d'argent.");
             }
-        else if (argent >= 10000000)
+        else if (argent >= prix4)
             {
                 Console.WriteLine("Tu as acheté le missile.");
                 Console.WriteLine("Solde restant :");
-                Console.WriteLine(argent - 10000000);
+                Console.WriteLine(argent - prix4);
             }
-
         // Etape 7b : modifiez l'étape 7a pour ajouter un connecteur logique qui vérifie que l'utilisateur est majeur en plus d'avoir assez d'argent
         // Lorsque l'utilisateur respecte ces demandes, retirez le prix de l'arme de l'argent de l'utilisateur, puis confirmez à l'utilisateur que l'action a été effectuée 
         // Dans tous les autres cas, informez l'utilisateur que l'action n'a pas été possible
