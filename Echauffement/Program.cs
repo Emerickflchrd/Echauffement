@@ -66,6 +66,10 @@ class Program
             {
                 Console.WriteLine("tu as choisis le missile.");
             }
+        else
+        {
+            Console.WriteLine("Ce n'est pas dans les options disponible.");
+        }
 
         // Etape 7a : vérifiez si l'utilisateur a assez d'argent par rapport à la somme qu'il avait rentré à l'étape 4
         if (age < 18)
@@ -73,7 +77,9 @@ class Program
             Console.WriteLine("Tu es trop jeune pour acheter un arme.");
         }
         else if (choix == 1)
+        {
             if (argent < prix1)
+
             {
                 Console.WriteLine("Tu n'as pas assez d'argent.");
             }
@@ -83,17 +89,23 @@ class Program
                 Console.WriteLine("Solde restant :");
                 Console.WriteLine(argent - prix1);
             }
+        }
         if (choix == 2)
-        if (argent < prix2)
+        {
+            if (argent < prix2)
             {
                 Console.WriteLine("Tu n'as pas assez d'argent.");
             }
+        }
         else if (argent >= prix2)
-            {
-                Console.WriteLine("Tu as acheté l'épée.");
-                Console.WriteLine("Solde restant :");
-                Console.WriteLine(argent - prix2);
-            }
+        {
+            if (age >= 18) ;
+        }
+        {
+            Console.WriteLine("Tu as acheté l'épée.");
+            Console.WriteLine("Solde restant :");
+            Console.WriteLine(argent - prix2);
+        }
         if (choix == 3)
         if (argent < prix3)
             {
